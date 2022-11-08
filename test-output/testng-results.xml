@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Automation Regression Suite" duration-ms="1550972" started-at="2022-10-25T15:30:14Z" finished-at="2022-10-25T15:56:05Z">
+    <groups>
+    </groups>
+    <test name="Google Test" duration-ms="8144" started-at="2022-10-25T15:30:14Z" finished-at="2022-10-25T15:30:22Z">
+      <class name="TestNGSessions13.GoogleTestWithBT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:TestNGSessions13.GoogleTestWithBT@7c417213]" name="setup" is-config="true" duration-ms="2097" started-at="2022-10-25T15:30:14Z" finished-at="2022-10-25T15:30:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="googleTitleTest()[pri:1, instance:TestNGSessions13.GoogleTestWithBT@7c417213]" name="googleTitleTest" duration-ms="2042" started-at="2022-10-25T15:30:16Z" finished-at="2022-10-25T15:30:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTitleTest -->
+        <test-method status="FAIL" signature="googleLogoTest()[pri:2, instance:TestNGSessions13.GoogleTestWithBT@7c417213]" name="googleLogoTest" duration-ms="43" started-at="2022-10-25T15:30:18Z" finished-at="2022-10-25T15:30:18Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#hplogo"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P8RTCON', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ayesh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d705e762f824ee1e78c0afdfe068735
+*** Element info: {Using=id, value=hplogo}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#hplogo"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P8RTCON', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ayesh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55578}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d705e762f824ee1e78c0afdfe068735
+*** Element info: {Using=id, value=hplogo}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at TestNGSessions13.GoogleTestWithBT.googleLogoTest(GoogleTestWithBT.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleLogoTest -->
+        <test-method status="PASS" signature="googleSearchButtonTest()[pri:3, instance:TestNGSessions13.GoogleTestWithBT@7c417213]" name="googleSearchButtonTest" duration-ms="3135" started-at="2022-10-25T15:30:18Z" finished-at="2022-10-25T15:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearchButtonTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNGSessions13.GoogleTestWithBT@7c417213]" name="tearDown" is-config="true" duration-ms="795" started-at="2022-10-25T15:30:21Z" finished-at="2022-10-25T15:30:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNGSessions13.GoogleTestWithBT -->
+    </test> <!-- Google Test -->
+    <test name="Noon Test" duration-ms="40709" started-at="2022-10-25T15:30:14Z" finished-at="2022-10-25T15:30:55Z">
+      <class name="TestNGSessions13.NoonTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:TestNGSessions13.NoonTest@19d37183]" name="setup" is-config="true" duration-ms="26615" started-at="2022-10-25T15:30:14Z" finished-at="2022-10-25T15:30:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="noonTitleTest()[pri:1, instance:TestNGSessions13.NoonTest@19d37183]" name="noonTitleTest" duration-ms="5074" started-at="2022-10-25T15:30:41Z" finished-at="2022-10-25T15:30:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noonTitleTest -->
+        <test-method status="PASS" signature="noonLogoTest()[pri:2, instance:TestNGSessions13.NoonTest@19d37183]" name="noonLogoTest" duration-ms="2848" started-at="2022-10-25T15:30:46Z" finished-at="2022-10-25T15:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noonLogoTest -->
+        <test-method status="PASS" signature="noonSignInTest()[pri:3, instance:TestNGSessions13.NoonTest@19d37183]" name="noonSignInTest" duration-ms="3091" started-at="2022-10-25T15:30:48Z" finished-at="2022-10-25T15:30:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noonSignInTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNGSessions13.NoonTest@19d37183]" name="tearDown" is-config="true" duration-ms="3073" started-at="2022-10-25T15:30:52Z" finished-at="2022-10-25T15:30:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNGSessions13.NoonTest -->
+    </test> <!-- Noon Test -->
+    <test name="Flipkart Test" duration-ms="1550972" started-at="2022-10-25T15:30:14Z" finished-at="2022-10-25T15:56:05Z">
+      <class name="TestNGSessions13.FlipkartTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:TestNGSessions13.FlipkartTest@2d9d4f9d]" name="setup" is-config="true" duration-ms="5507" started-at="2022-10-25T15:30:14Z" finished-at="2022-10-25T15:30:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="flipkartTitleTest()[pri:1, instance:TestNGSessions13.FlipkartTest@2d9d4f9d]" name="flipkartTitleTest" duration-ms="61336" started-at="2022-10-25T15:30:19Z" finished-at="2022-10-25T15:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkartTitleTest -->
+        <test-method status="PASS" signature="flipkartLogoTest()[pri:2, instance:TestNGSessions13.FlipkartTest@2d9d4f9d]" name="flipkartLogoTest" duration-ms="191" started-at="2022-10-25T15:31:21Z" finished-at="2022-10-25T15:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkartLogoTest -->
+        <test-method status="PASS" signature="flipkartSearchButtonTest()[pri:3, instance:TestNGSessions13.FlipkartTest@2d9d4f9d]" name="flipkartSearchButtonTest" duration-ms="3087" started-at="2022-10-25T15:31:21Z" finished-at="2022-10-25T15:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkartSearchButtonTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNGSessions13.FlipkartTest@2d9d4f9d]" name="tearDown" is-config="true" duration-ms="1480840" started-at="2022-10-25T15:31:24Z" finished-at="2022-10-25T15:56:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNGSessions13.FlipkartTest -->
+    </test> <!-- Flipkart Test -->
+  </suite> <!-- Test Automation Regression Suite -->
+</testng-results>

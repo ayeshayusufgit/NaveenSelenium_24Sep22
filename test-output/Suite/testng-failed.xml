@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNGSessions13.NoonTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="noonLogoTest"/>
+          <include name="setup"/>
+          <include name="noonTitleTest"/>
+          <include name="noonSignInTest"/>
+        </methods>
+      </class> <!-- TestNGSessions13.NoonTest -->
+      <class name="TestNGSessions13.FlipkartTest">
+        <methods>
+          <include name="flipkartLogoTest"/>
+          <include name="flipkartSearchButtonTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="flipkartTitleTest"/>
+        </methods>
+      </class> <!-- TestNGSessions13.FlipkartTest -->
+      <class name="TestNGSessions13.GoogleTestWithBT">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="googleLogoTest"/>
+        </methods>
+      </class> <!-- TestNGSessions13.GoogleTestWithBT -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

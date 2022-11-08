@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="4" name="Failed suite [Test Automation Regression Suite]" parallel="tests">
+  <test thread-count="5" verbose="4" name="Google Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestNGSessions13.GoogleTestWithBT">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="googleLogoTest"/>
+        </methods>
+      </class> <!-- TestNGSessions13.GoogleTestWithBT -->
+    </classes>
+  </test> <!-- Google Test(failed) -->
+</suite> <!-- Failed suite [Test Automation Regression Suite] -->

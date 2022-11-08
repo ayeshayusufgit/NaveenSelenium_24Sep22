@@ -1,0 +1,16 @@
+Developers write their unit tests to test their java code using a unit testing FW as follows:
+
+testNG(Testing New Generation)-->unit testing framework
+(testNG is built on top of JUNIT and has more advanced and user friendly features than JUNIT)
+(Automation engineers prefer testNG wrt to Junit)
+
+JUNIT
+(TestNG or JUNIT cannot be used for unit testing of code in other languages but only used for unit testing of java code)
+
+PyTest -- Python unit testing FW
+PHPUnit	--	PHP unit testing FW
+NUnit -- .Net unit testing FW
+Mocha/Jasmine	--	Javascript unit testing FW
+RubyUnit	--	Ruby testing FW
+
+Purpose->to write testcases	+	assertions(validations)	+	HTML reports	+	other features
